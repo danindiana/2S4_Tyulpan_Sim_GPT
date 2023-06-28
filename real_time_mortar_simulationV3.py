@@ -58,14 +58,14 @@ if __name__ == '__main__':
     line, = plt.plot([], [], 'b-', lw=2)
 
     # Initial x and y axis limits
-    ax.set_xlim(0, 1000)
-    ax.set_ylim(0, 1000)
+    ax.set_xlim(0, 10000)
+    ax.set_ylim(0, 10000)
 
     ax.set_xlabel("Distance (m)")
     ax.set_ylabel("Height (m)")
     ax.grid()
 
-    ani = FuncAnimation(fig, animate, frames=500, fargs=(x_data, y_data, line, ax, muzzle_velocity, angle),
+    ani = FuncAnimation(fig, animate, frames=1500, fargs=(x_data, y_data, line, ax, muzzle_velocity, angle),
                         interval=20, blit=True)
 
     plt.show()
