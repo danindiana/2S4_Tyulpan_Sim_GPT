@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/45617667-7900-4b27-b614-40cea9c69980)
 
 # **"Hexfire: Tyulpan Tactics"**
 
@@ -134,3 +133,33 @@ For questions, suggestions, or feedback, please contact us at [your-email@exampl
 ---
 
 **Hexfire: Tyulpan Tactics** – Where precision meets power. Command the 2S4 Tyulpan and dominate the battlefield!
+
+```mermaid
+graph TD
+    A[Main Menu] --> B{Select Mode}
+    B -->|Campaign Mode| C[Mission Selection]
+    B -->|Free Play Mode| D[Custom Mission Setup]
+    B -->|Tutorial| E[Introduction/Training Mission]
+    B -->|Exit| F[Exit Game]
+
+    C --> G[Mission Briefing]
+    D --> G[Mission Briefing]
+    E --> G[Mission Briefing]
+
+    G --> H[Hex Grid Display]
+    H --> I[Select Target Hex]
+    I --> J[Calculate Fire Settings]
+    J --> K[Adjust Charge, Elevation, Traverse]
+    K --> L[Fire Mortar]
+    L --> M{Mission Success?}
+
+    M -->|Yes| N[Mission Debriefing]
+    M -->|No| O[Retry or Adjust Settings]
+    O --> I
+
+    N --> P{Next Mission?}
+    P -->|Yes| C
+    P -->|No| Q[Campaign Conclusion]
+
+    Q --> R[Main Menu]
+```
